@@ -1,0 +1,5 @@
+# Synthetic project dependencies.
+numpy==1.26.0
+onnx==1.15.0
+onnxruntime==1.17.0
+opencv-python==4.9.0

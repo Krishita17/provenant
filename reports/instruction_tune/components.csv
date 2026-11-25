@@ -1,0 +1,8 @@
+component,type,version,hash,source,license,license_class,provenance,lineage_parent,risk
+tatsu-lab/alpaca,dataset,main,sha256:cached-alpac,https://huggingface.co/datasets/tatsu-lab/alpaca,cc-by-nc-4.0,non_commercial,resolved,,non_commercial
+accelerate,framework,0.29.0,sha256:cached-accel,https://pypi.org/project/accelerate/,apache-2.0,permissive,resolved,,-
+peft,framework,0.10.0,sha256:cached-peft-,https://pypi.org/project/peft/,apache-2.0,permissive,resolved,,-
+torch,framework,2.3.0,sha256:cached-torch,https://pypi.org/project/torch/,bsd-3-clause,permissive,resolved,,-
+transformers,framework,4.40.0,sha256:cached-trans,https://pypi.org/project/transformers/,apache-2.0,permissive,resolved,,-
+acme-user/llama2-alpaca,model,v1,sha256:19d0de148a09,local,apache-2.0,permissive,resolved,meta-llama/Llama-2-7b-hf,license_incompatibility
+meta-llama/Llama-2-7b-hf,model,main,sha256:cached-llama,https://huggingface.co/meta-llama/Llama-2-7b-hf,llama-2-community,restricted,resolved,,restrictive_license

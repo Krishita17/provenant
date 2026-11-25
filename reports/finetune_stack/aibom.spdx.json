@@ -1,0 +1,209 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "finetune_stack",
+  "documentNamespace": "https://provenant.example/spdx/finetune_stack/ba31e3b1-f4bb-5cd4-8a57-8f7ad74d6802",
+  "creationInfo": {
+    "created": "2026-01-01T00:00:00Z",
+    "creators": [
+      "Tool: provenant-0.1.0"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-dataset-0-opencorp-instruct-mini",
+      "name": "opencorp/instruct-mini",
+      "downloadLocation": "https://huggingface.co/datasets/opencorp/instruct-mini",
+      "licenseDeclared": "Apache-2.0",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "v2",
+      "supplier": "Organization: opencorp",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=dataset; provenance_status=resolved; source_kind=huggingface; content_hash=sha256:a6eb14260e3c8ea7e256737c1349d111bdd05062"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-dataset-1-research-lab-dialogs-nc",
+      "name": "research-lab/dialogs-nc",
+      "downloadLocation": "https://huggingface.co/datasets/research-lab/dialogs-nc",
+      "licenseDeclared": "CC-BY-NC-4.0",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "v3",
+      "supplier": "Organization: research-lab",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=dataset; provenance_status=resolved; source_kind=huggingface; content_hash=sha256:77b188712971e74ab7c45b56a975370b2ada2fc1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-framework-2-datasets",
+      "name": "datasets",
+      "downloadLocation": "https://pypi.org/project/datasets/",
+      "licenseDeclared": "Apache-2.0",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "2.18.0",
+      "supplier": "Organization: Hugging Face",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=framework; provenance_status=resolved; source_kind=registry; content_hash=sha256:c4919170880243d6507d65e56af38e5602947e24"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-framework-3-torch",
+      "name": "torch",
+      "downloadLocation": "https://pypi.org/project/torch/",
+      "licenseDeclared": "BSD-3-Clause",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "2.2.0",
+      "supplier": "Organization: Meta",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=framework; provenance_status=resolved; source_kind=registry; content_hash=sha256:d28827b18d1a2c3b6bab5d4a75086324755d1032"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-framework-4-transformers",
+      "name": "transformers",
+      "downloadLocation": "https://pypi.org/project/transformers/",
+      "licenseDeclared": "Apache-2.0",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "4.38.0",
+      "supplier": "Organization: Hugging Face",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=framework; provenance_status=resolved; source_kind=registry; content_hash=sha256:0338da51c509d39a3c5ceafb6f96573fede4875c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-model-5-acme-base-lm-1b",
+      "name": "acme/base-lm-1b",
+      "downloadLocation": "https://huggingface.co/acme/base-lm-1b",
+      "licenseDeclared": "Apache-2.0",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "v1.0",
+      "supplier": "Organization: acme",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=model; provenance_status=resolved; source_kind=huggingface; content_hash=sha256:7685a80f88b495d6232a1c20151327902b110f5a"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-model-6-myorg-base-lm-1b-chat",
+      "name": "myorg/base-lm-1b-chat",
+      "downloadLocation": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "v1.0",
+      "supplier": "Organization: myorg",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=model; provenance_status=resolved; source_kind=local; content_hash=sha256:91de06df17c2305b3bf390df619887b0653014af"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-dataset-0-opencorp-instruct-mini",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-dataset-1-research-lab-dialogs-nc",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-framework-2-datasets",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-framework-3-torch",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-framework-4-transformers",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-model-5-acme-base-lm-1b",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-model-6-myorg-base-lm-1b-chat",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-model-6-myorg-base-lm-1b-chat",
+      "relatedSpdxElement": "SPDXRef-model-5-acme-base-lm-1b",
+      "relationshipType": "DESCENDANT_OF"
+    },
+    {
+      "spdxElementId": "SPDXRef-model-6-myorg-base-lm-1b-chat",
+      "relatedSpdxElement": "SPDXRef-dataset-0-opencorp-instruct-mini",
+      "relationshipType": "GENERATED_FROM"
+    },
+    {
+      "spdxElementId": "SPDXRef-model-6-myorg-base-lm-1b-chat",
+      "relatedSpdxElement": "SPDXRef-dataset-1-research-lab-dialogs-nc",
+      "relationshipType": "GENERATED_FROM"
+    }
+  ],
+  "documentDescribes": [
+    "SPDXRef-dataset-0-opencorp-instruct-mini",
+    "SPDXRef-dataset-1-research-lab-dialogs-nc",
+    "SPDXRef-framework-2-datasets",
+    "SPDXRef-framework-3-torch",
+    "SPDXRef-framework-4-transformers",
+    "SPDXRef-model-5-acme-base-lm-1b",
+    "SPDXRef-model-6-myorg-base-lm-1b-chat"
+  ]
+}

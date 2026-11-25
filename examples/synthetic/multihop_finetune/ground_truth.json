@@ -1,0 +1,110 @@
+{
+  "project": {
+    "name": "multihop_finetune",
+    "kind": "synthetic"
+  },
+  "components": [
+    {
+      "id": "framework:transformers",
+      "type": "framework",
+      "name": "transformers",
+      "version": "4.38.0",
+      "license": "apache-2.0",
+      "source_kind": "registry",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "framework:peft",
+      "type": "framework",
+      "name": "peft",
+      "version": "0.9.0",
+      "license": "apache-2.0",
+      "source_kind": "registry",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "model:acme/foundation-7b",
+      "type": "model",
+      "name": "acme/foundation-7b",
+      "version": "v1.0",
+      "license": "apache-2.0",
+      "source_kind": "huggingface",
+      "provenance_status": "resolved",
+      "file_present": false
+    },
+    {
+      "id": "model:labA/foundation-7b-sft",
+      "type": "model",
+      "name": "labA/foundation-7b-sft",
+      "version": "v2.0",
+      "license": "apache-2.0",
+      "source_kind": "huggingface",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "dataset:labA/sft-mix",
+      "type": "dataset",
+      "name": "labA/sft-mix",
+      "version": "v1",
+      "license": "apache-2.0",
+      "source_kind": "huggingface",
+      "provenance_status": "resolved",
+      "file_present": false
+    },
+    {
+      "id": "dataset:labB/dialogs-nc",
+      "type": "dataset",
+      "name": "labB/dialogs-nc",
+      "version": "v1",
+      "license": "cc-by-nc-4.0",
+      "source_kind": "huggingface",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "model:labB/foundation-7b-chat",
+      "type": "model",
+      "name": "labB/foundation-7b-chat",
+      "version": "v1.0",
+      "license": "apache-2.0",
+      "source_kind": "local",
+      "provenance_status": "resolved",
+      "file_present": true
+    }
+  ],
+  "relationships": [
+    {
+      "src": "labA/foundation-7b-sft",
+      "dst": "acme/foundation-7b",
+      "rel_type": "finetuned_from"
+    },
+    {
+      "src": "labA/foundation-7b-sft",
+      "dst": "labA/sft-mix",
+      "rel_type": "trained_on"
+    },
+    {
+      "src": "labB/foundation-7b-chat",
+      "dst": "labA/foundation-7b-sft",
+      "rel_type": "finetuned_from"
+    },
+    {
+      "src": "labB/foundation-7b-chat",
+      "dst": "labB/dialogs-nc",
+      "rel_type": "trained_on"
+    }
+  ],
+  "expected_findings": [
+    {
+      "component_id": "dataset:labB/dialogs-nc",
+      "category": "non_commercial"
+    },
+    {
+      "component_id": "model:labB/foundation-7b-chat",
+      "category": "license_incompatibility"
+    }
+  ]
+}

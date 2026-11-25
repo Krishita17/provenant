@@ -1,0 +1,54 @@
+# Cached metadata for this project's frameworks and first-party fine-tune.
+# meta-llama/Llama-2-7b-hf and tatsu-lab/alpaca resolve from the packaged base
+# metadata store. No weights or datasets are included.
+components:
+  - key: "framework:transformers"
+    type: framework
+    name: transformers
+    source_kind: registry
+    source_url: https://pypi.org/project/transformers/
+    license: apache-2.0
+    publisher: Hugging Face
+    publish_date: "2024-04-01"
+    default_revision: "4.40.0"
+    revisions: {"4.40.0": "sha256:cached-transformers-4-40-0"}
+  - key: "framework:peft"
+    type: framework
+    name: peft
+    source_kind: registry
+    source_url: https://pypi.org/project/peft/
+    license: apache-2.0
+    publisher: Hugging Face
+    publish_date: "2024-03-20"
+    default_revision: "0.10.0"
+    revisions: {"0.10.0": "sha256:cached-peft-0-10-0"}
+  - key: "framework:torch"
+    type: framework
+    name: torch
+    source_kind: registry
+    source_url: https://pypi.org/project/torch/
+    license: bsd-3-clause
+    publisher: Meta
+    publish_date: "2024-04-24"
+    default_revision: "2.3.0"
+    revisions: {"2.3.0": "sha256:cached-torch-2-3-0"}
+  - key: "framework:accelerate"
+    type: framework
+    name: accelerate
+    source_kind: registry
+    source_url: https://pypi.org/project/accelerate/
+    license: apache-2.0
+    publisher: Hugging Face
+    publish_date: "2024-03-29"
+    default_revision: "0.29.0"
+    revisions: {"0.29.0": "sha256:cached-accelerate-0-29-0"}
+  - key: "model:acme-user/llama2-alpaca"
+    type: model
+    name: acme-user/llama2-alpaca
+    source_kind: local
+    license: apache-2.0
+    publisher: acme-user
+    publish_date: "2024-05-10"
+    default_revision: v1
+    revisions: {v1: "sha256:cached-llama2-alpaca-v1"}
+    card_summary: "Llama 2 LoRA instruction-tune on Alpaca (first-party)."

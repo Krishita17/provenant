@@ -1,0 +1,5 @@
+# Synthetic training/inference config.
+datasets:
+- opencorp/faq-corpus
+embedding_model: opencorp/minilm-embed
+llm: https://models.sketchy-hub.example/uncensored-llm.gguf

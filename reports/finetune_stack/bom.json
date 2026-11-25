@@ -1,0 +1,320 @@
+{
+  "project": {
+    "name": "finetune_stack",
+    "path": "/Users/krishdhan/ai-policy-gov-sec/Provenant/examples/synthetic/finetune_stack"
+  },
+  "components": [
+    {
+      "id": "dataset:opencorp/instruct-mini",
+      "type": "dataset",
+      "name": "opencorp/instruct-mini",
+      "version": "v2",
+      "hash": "sha256:a6eb14260e3c8ea7e256737c1349d111bdd05062",
+      "source": "https://huggingface.co/datasets/opencorp/instruct-mini",
+      "source_kind": "huggingface",
+      "license": "apache-2.0",
+      "license_source": "fixture",
+      "publisher": "opencorp",
+      "publish_date": "2023-11-20",
+      "card_summary": "Small permissive instruction-tuning dataset.",
+      "provenance_status": "resolved",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "source": "config",
+          "detail": "datasets in config/train.yaml",
+          "path": "config/train.yaml",
+          "snippet": "datasets: opencorp/instruct-mini"
+        },
+        {
+          "source": "code",
+          "detail": "load_dataset in train.py",
+          "path": "train.py",
+          "snippet": "load_dataset(\"opencorp/instruct-mini\""
+        },
+        {
+          "source": "code",
+          "detail": "load_dataset in notebooks/explore.ipynb",
+          "path": "notebooks/explore.ipynb",
+          "snippet": "load_dataset(\"opencorp/instruct-mini\""
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "id": "dataset:research-lab/dialogs-nc",
+      "type": "dataset",
+      "name": "research-lab/dialogs-nc",
+      "version": "v3",
+      "hash": "sha256:77b188712971e74ab7c45b56a975370b2ada2fc1",
+      "source": "https://huggingface.co/datasets/research-lab/dialogs-nc",
+      "source_kind": "huggingface",
+      "license": "cc-by-nc-4.0",
+      "license_source": "fixture",
+      "publisher": "research-lab",
+      "publish_date": "2023-05-10",
+      "card_summary": "Dialogue corpus released for non-commercial research use.",
+      "provenance_status": "resolved",
+      "commercial_use": false,
+      "evidence": [
+        {
+          "source": "config",
+          "detail": "datasets in config/train.yaml",
+          "path": "config/train.yaml",
+          "snippet": "datasets: research-lab/dialogs-nc"
+        },
+        {
+          "source": "code",
+          "detail": "load_dataset in train.py",
+          "path": "train.py",
+          "snippet": "load_dataset(\"research-lab/dialogs-nc\""
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "id": "framework:datasets",
+      "type": "framework",
+      "name": "datasets",
+      "version": "2.18.0",
+      "hash": "sha256:c4919170880243d6507d65e56af38e5602947e24",
+      "source": "https://pypi.org/project/datasets/",
+      "source_kind": "registry",
+      "license": "apache-2.0",
+      "license_source": "fixture",
+      "publisher": "Hugging Face",
+      "publish_date": "2024-01-15",
+      "card_summary": "datasets 2.18.0 (PyPI).",
+      "provenance_status": "resolved",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "source": "requirements",
+          "detail": "pinned in requirements.txt",
+          "path": "requirements.txt",
+          "line": 2,
+          "snippet": "datasets==2.18.0"
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "id": "framework:torch",
+      "type": "framework",
+      "name": "torch",
+      "version": "2.2.0",
+      "hash": "sha256:d28827b18d1a2c3b6bab5d4a75086324755d1032",
+      "source": "https://pypi.org/project/torch/",
+      "source_kind": "registry",
+      "license": "bsd-3-clause",
+      "license_source": "fixture",
+      "publisher": "Meta",
+      "publish_date": "2024-01-15",
+      "card_summary": "torch 2.2.0 (PyPI).",
+      "provenance_status": "resolved",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "source": "requirements",
+          "detail": "pinned in requirements.txt",
+          "path": "requirements.txt",
+          "line": 3,
+          "snippet": "torch==2.2.0"
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "id": "framework:transformers",
+      "type": "framework",
+      "name": "transformers",
+      "version": "4.38.0",
+      "hash": "sha256:0338da51c509d39a3c5ceafb6f96573fede4875c",
+      "source": "https://pypi.org/project/transformers/",
+      "source_kind": "registry",
+      "license": "apache-2.0",
+      "license_source": "fixture",
+      "publisher": "Hugging Face",
+      "publish_date": "2024-01-15",
+      "card_summary": "transformers 4.38.0 (PyPI).",
+      "provenance_status": "resolved",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "source": "requirements",
+          "detail": "pinned in requirements.txt",
+          "path": "requirements.txt",
+          "line": 4,
+          "snippet": "transformers==4.38.0"
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "id": "model:acme/base-lm-1b",
+      "type": "model",
+      "name": "acme/base-lm-1b",
+      "version": "v1.0",
+      "hash": "sha256:7685a80f88b495d6232a1c20151327902b110f5a",
+      "source": "https://huggingface.co/acme/base-lm-1b",
+      "source_kind": "huggingface",
+      "license": "apache-2.0",
+      "license_source": "fixture",
+      "publisher": "acme",
+      "publish_date": "2023-09-01",
+      "card_summary": "A 1B-parameter base language model.",
+      "provenance_status": "resolved",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "source": "config",
+          "detail": "base_model in config/train.yaml",
+          "path": "config/train.yaml",
+          "snippet": "base_model: acme/base-lm-1b@v1.0"
+        },
+        {
+          "source": "code",
+          "detail": "from_pretrained in train.py",
+          "path": "train.py",
+          "snippet": "AutoModelForCausalLM.from_pretrained(\"acme/base-lm-1b\", revision=\"v1.0\""
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "id": "model:myorg/base-lm-1b-chat",
+      "type": "model",
+      "name": "myorg/base-lm-1b-chat",
+      "version": "v1.0",
+      "hash": "sha256:91de06df17c2305b3bf390df619887b0653014af",
+      "source": null,
+      "source_kind": "local",
+      "license": "apache-2.0",
+      "license_source": "fixture",
+      "publisher": "myorg",
+      "publish_date": "2024-02-01",
+      "card_summary": "Chat fine-tune of acme/base-lm-1b.",
+      "provenance_status": "resolved",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "source": "config",
+          "detail": "model_name_or_path in config/train.yaml",
+          "path": "config/train.yaml",
+          "snippet": "model_name_or_path: myorg/base-lm-1b-chat"
+        },
+        {
+          "source": "local_artifact",
+          "detail": "weight file models/base-lm-1b-chat.safetensors",
+          "path": "models/base-lm-1b-chat.safetensors"
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {
+        "local_path": "models/base-lm-1b-chat.safetensors"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "src": "model:myorg/base-lm-1b-chat",
+      "dst": "model:acme/base-lm-1b",
+      "rel_type": "finetuned_from",
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "source": "config",
+          "detail": "base_model/model_name_or_path in config/train.yaml",
+          "path": "config/train.yaml"
+        }
+      ]
+    },
+    {
+      "src": "model:myorg/base-lm-1b-chat",
+      "dst": "dataset:opencorp/instruct-mini",
+      "rel_type": "trained_on",
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "source": "config",
+          "detail": "datasets in config/train.yaml",
+          "path": "config/train.yaml"
+        }
+      ]
+    },
+    {
+      "src": "model:myorg/base-lm-1b-chat",
+      "dst": "dataset:research-lab/dialogs-nc",
+      "rel_type": "trained_on",
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "source": "config",
+          "detail": "datasets in config/train.yaml",
+          "path": "config/train.yaml"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "LIC-NC-001:dataset:research-lab/dialogs-nc",
+      "category": "non_commercial",
+      "severity": "high",
+      "component_id": "dataset:research-lab/dialogs-nc",
+      "rule_id": "LIC-NC-001",
+      "message": "Dataset 'research-lab/dialogs-nc' is under Creative Commons Attribution-NonCommercial 4.0 (non-commercial).",
+      "recommendation": "Do not use in a commercial system without a separate grant; confirm the terms with someone qualified.",
+      "evidence": [
+        {
+          "source": "policy_kb",
+          "detail": "license 'cc-by-nc-4.0' class=non_commercial"
+        }
+      ],
+      "related_component_id": null
+    },
+    {
+      "id": "LIC-INCOMPAT-001:model:myorg/base-lm-1b-chat->dataset:research-lab/dialogs-nc",
+      "category": "license_incompatibility",
+      "severity": "high",
+      "component_id": "model:myorg/base-lm-1b-chat",
+      "rule_id": "LIC-INCOMPAT-001",
+      "message": "Model 'myorg/base-lm-1b-chat' (Apache License 2.0) has a non-commercial component 'research-lab/dialogs-nc' (Creative Commons Attribution-NonCommercial 4.0) in its lineage.",
+      "recommendation": "A commercial release would inherit the non-commercial restriction; re-source the component or restrict use. Confirm with someone qualified.",
+      "evidence": [
+        {
+          "source": "analyzer",
+          "detail": "commercial model reaches a non-commercial component via provenance edges"
+        }
+      ],
+      "related_component_id": "dataset:research-lab/dialogs-nc"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "project": {
+    "name": "rag_app",
+    "kind": "synthetic"
+  },
+  "components": [
+    {
+      "id": "framework:langchain",
+      "type": "framework",
+      "name": "langchain",
+      "version": "0.1.0",
+      "license": "mit",
+      "source_kind": "registry",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "framework:sentence-transformers",
+      "type": "framework",
+      "name": "sentence-transformers",
+      "version": "2.5.0",
+      "license": "apache-2.0",
+      "source_kind": "registry",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "framework:faiss-cpu",
+      "type": "framework",
+      "name": "faiss-cpu",
+      "version": "1.8.0",
+      "license": "mit",
+      "source_kind": "registry",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "model:opencorp/minilm-embed",
+      "type": "model",
+      "name": "opencorp/minilm-embed",
+      "version": null,
+      "license": "apache-2.0",
+      "source_kind": "huggingface",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "dataset:opencorp/faq-corpus",
+      "type": "dataset",
+      "name": "opencorp/faq-corpus",
+      "version": "v1",
+      "license": "cc-by-4.0",
+      "source_kind": "huggingface",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "model:sketchy-hub/uncensored-llm",
+      "type": "model",
+      "name": "sketchy-hub/uncensored-llm",
+      "version": null,
+      "license": null,
+      "source_kind": "url",
+      "provenance_status": "partial",
+      "file_present": true
+    }
+  ],
+  "relationships": [],
+  "expected_findings": [
+    {
+      "component_id": "model:opencorp/minilm-embed",
+      "category": "unpinned"
+    },
+    {
+      "component_id": "model:sketchy-hub/uncensored-llm",
+      "category": "flagged_source"
+    },
+    {
+      "component_id": "model:sketchy-hub/uncensored-llm",
+      "category": "missing_provenance"
+    }
+  ]
+}

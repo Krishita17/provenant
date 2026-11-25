@@ -1,0 +1,6 @@
+# Synthetic training/inference config.
+base_model: acme/base-lm-1b@v1.0
+datasets:
+- research-lab/dialogs-nc
+- opencorp/instruct-mini
+model_name_or_path: myorg/base-lm-1b-chat

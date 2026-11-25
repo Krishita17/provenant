@@ -1,0 +1,7 @@
+project,kind,components,edges,findings,discovery_recall,lineage_f1,finding_f1,provenance_accuracy,cyclonedx_valid,spdx_valid
+finetune_stack,synthetic,7,3,2,1.0,1.0,1.0,1.0,1,1
+multihop_finetune,synthetic,7,4,2,1.0,1.0,1.0,1.0,1,1
+rag_app,synthetic,6,0,3,1.0,1.0,1.0,1.0,1,1
+vision_pipeline,synthetic,6,2,3,0.8333,1.0,1.0,1.0,1,1
+hf_sentiment,real,6,2,1,1.0,1.0,1.0,1.0,1,1
+instruction_tune,real,7,2,3,1.0,1.0,1.0,1.0,1,1

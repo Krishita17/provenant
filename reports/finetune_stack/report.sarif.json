@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Provenant",
+          "version": "0.1.0",
+          "informationUri": "https://github.com/Krishita17/provenant",
+          "rules": [
+            {
+              "id": "LIC-INCOMPAT-001",
+              "name": "LIC-INCOMPAT-001",
+              "shortDescription": {
+                "text": "A commercially-usable model has a non-commercial component in its lineage."
+              }
+            },
+            {
+              "id": "LIC-NC-001",
+              "name": "LIC-NC-001",
+              "shortDescription": {
+                "text": "Component is under a non-commercial license."
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "LIC-NC-001",
+          "level": "error",
+          "message": {
+            "text": "Dataset 'research-lab/dialogs-nc' is under Creative Commons Attribution-NonCommercial 4.0 (non-commercial). Recommendation: Do not use in a commercial system without a separate grant; confirm the terms with someone qualified."
+          },
+          "properties": {
+            "category": "non_commercial",
+            "component": "dataset:research-lab/dialogs-nc",
+            "severity": "high"
+          }
+        },
+        {
+          "ruleId": "LIC-INCOMPAT-001",
+          "level": "error",
+          "message": {
+            "text": "Model 'myorg/base-lm-1b-chat' (Apache License 2.0) has a non-commercial component 'research-lab/dialogs-nc' (Creative Commons Attribution-NonCommercial 4.0) in its lineage. Recommendation: A commercial release would inherit the non-commercial restriction; re-source the component or restrict use. Confirm with someone qualified."
+          },
+          "properties": {
+            "category": "license_incompatibility",
+            "component": "model:myorg/base-lm-1b-chat",
+            "severity": "high",
+            "related_component": "dataset:research-lab/dialogs-nc"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+# Cached, point-in-time metadata for this project's components.
+# Offline resolution source; no weights or datasets are included.
+components:
+- key: framework:onnxruntime
+  type: framework
+  name: onnxruntime
+  source_kind: registry
+  license: mit
+  publisher: Microsoft
+  publish_date: '2024-01-15'
+  card_summary: onnxruntime 1.17.0 (PyPI).
+  source_url: https://pypi.org/project/onnxruntime/
+  revisions:
+    1.17.0: sha256:ed54a33028f102a9adf55a5c7f2715a4b4697070
+  default_revision: 1.17.0
+- key: framework:onnx
+  type: framework
+  name: onnx
+  source_kind: registry
+  license: apache-2.0
+  publisher: ONNX
+  publish_date: '2024-01-15'
+  card_summary: onnx 1.15.0 (PyPI).
+  source_url: https://pypi.org/project/onnx/
+  revisions:
+    1.15.0: sha256:dd8541c91c1f8098ded5e3ea70ea71ee35bd18af
+  default_revision: 1.15.0
+- key: model:visionlab/segmenter-v2
+  type: model
+  name: visionlab/segmenter-v2
+  source_kind: huggingface
+  license: openrail
+  publisher: visionlab
+  publish_date: '2023-12-01'
+  card_summary: Street-scene segmenter; RAIL acceptable-use terms apply.
+  source_url: https://huggingface.co/visionlab/segmenter-v2
+  revisions:
+    v2.1: sha256:ed48886633f7a81e4cf3498fdb259fe6cd90afa3
+  default_revision: v2.1
+  card:
+    base_model: visionlab/segmenter-base
+    datasets:
+    - opencorp/streetscapes
+- key: model:visionlab/segmenter-base
+  type: model
+  name: visionlab/segmenter-base
+  source_kind: huggingface
+  license: apache-2.0
+  publisher: visionlab
+  publish_date: '2023-06-01'
+  card_summary: Base segmentation backbone.
+  source_url: https://huggingface.co/visionlab/segmenter-base
+  revisions:
+    v1.0: sha256:c81f60fb0e4f122123242945621ecb5685fc32b9
+  default_revision: v1.0
+- key: dataset:opencorp/streetscapes
+  type: dataset
+  name: opencorp/streetscapes
+  source_kind: huggingface
+  license: cc-by-sa-4.0
+  publisher: opencorp
+  publish_date: '2023-07-15'
+  card_summary: Street scene imagery, share-alike licensed.
+  source_url: https://huggingface.co/datasets/opencorp/streetscapes
+  revisions:
+    v1: sha256:c28dde16b6a67a9452ce7a947963d22832e1dd51
+  default_revision: v1

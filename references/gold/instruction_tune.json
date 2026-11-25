@@ -1,0 +1,22 @@
+{
+  "project": { "name": "instruction_tune", "kind": "real" },
+  "_note": "Hand-labeled gold BOM for examples/real/instruction_tune. License facts are a point-in-time informational snapshot, not a legal determination.",
+  "components": [
+    { "type": "framework", "name": "transformers", "license": "apache-2.0", "source_kind": "registry", "provenance_status": "resolved", "file_present": true },
+    { "type": "framework", "name": "peft", "license": "apache-2.0", "source_kind": "registry", "provenance_status": "resolved", "file_present": true },
+    { "type": "framework", "name": "torch", "license": "bsd-3-clause", "source_kind": "registry", "provenance_status": "resolved", "file_present": true },
+    { "type": "framework", "name": "accelerate", "license": "apache-2.0", "source_kind": "registry", "provenance_status": "resolved", "file_present": true },
+    { "type": "model", "name": "meta-llama/Llama-2-7b-hf", "license": "llama-2-community", "source_kind": "huggingface", "provenance_status": "resolved", "file_present": true },
+    { "type": "model", "name": "acme-user/llama2-alpaca", "license": "apache-2.0", "source_kind": "local", "provenance_status": "resolved", "file_present": true },
+    { "type": "dataset", "name": "tatsu-lab/alpaca", "license": "cc-by-nc-4.0", "source_kind": "huggingface", "provenance_status": "resolved", "file_present": true }
+  ],
+  "relationships": [
+    { "src": "acme-user/llama2-alpaca", "dst": "meta-llama/Llama-2-7b-hf", "rel_type": "finetuned_from" },
+    { "src": "acme-user/llama2-alpaca", "dst": "tatsu-lab/alpaca", "rel_type": "trained_on" }
+  ],
+  "expected_findings": [
+    { "component_id": "model:meta-llama/Llama-2-7b-hf", "category": "restrictive_license" },
+    { "component_id": "dataset:tatsu-lab/alpaca", "category": "non_commercial" },
+    { "component_id": "model:acme-user/llama2-alpaca", "category": "license_incompatibility" }
+  ]
+}

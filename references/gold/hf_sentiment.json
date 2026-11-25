@@ -1,0 +1,19 @@
+{
+  "project": { "name": "hf_sentiment", "kind": "real" },
+  "_note": "Hand-labeled gold BOM for examples/real/hf_sentiment. License facts are a point-in-time informational snapshot, not a legal determination.",
+  "components": [
+    { "type": "framework", "name": "transformers", "license": "apache-2.0", "source_kind": "registry", "provenance_status": "resolved", "file_present": true },
+    { "type": "framework", "name": "torch", "license": "bsd-3-clause", "source_kind": "registry", "provenance_status": "resolved", "file_present": true },
+    { "type": "framework", "name": "datasets", "license": "apache-2.0", "source_kind": "registry", "provenance_status": "resolved", "file_present": true },
+    { "type": "model", "name": "distilbert-base-uncased", "license": "apache-2.0", "source_kind": "huggingface", "provenance_status": "resolved", "file_present": true },
+    { "type": "model", "name": "acme-user/distilbert-imdb", "license": "apache-2.0", "source_kind": "local", "provenance_status": "resolved", "file_present": true },
+    { "type": "dataset", "name": "imdb", "license": "other", "source_kind": "huggingface", "provenance_status": "resolved", "file_present": true }
+  ],
+  "relationships": [
+    { "src": "acme-user/distilbert-imdb", "dst": "distilbert-base-uncased", "rel_type": "finetuned_from" },
+    { "src": "acme-user/distilbert-imdb", "dst": "imdb", "rel_type": "trained_on" }
+  ],
+  "expected_findings": [
+    { "component_id": "dataset:imdb", "category": "license_review" }
+  ]
+}

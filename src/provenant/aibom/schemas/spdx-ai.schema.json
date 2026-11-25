@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provenant.example/schemas/spdx-ai.schema.json",
+  "title": "SPDX 2.3 with AI-profile annotations (Provenant profile)",
+  "$comment": "A self-contained subset of the upstream SPDX 2.3 JSON schema covering the fields Provenant emits, with AI-profile information carried in package annotations. Validation runs fully offline and does not supersede the official schema.",
+  "type": "object",
+  "required": ["spdxVersion", "dataLicense", "SPDXID", "name", "documentNamespace", "creationInfo", "packages"],
+  "properties": {
+    "spdxVersion": { "const": "SPDX-2.3" },
+    "dataLicense": { "type": "string" },
+    "SPDXID": { "const": "SPDXRef-DOCUMENT" },
+    "name": { "type": "string", "minLength": 1 },
+    "documentNamespace": { "type": "string", "minLength": 1 },
+    "creationInfo": {
+      "type": "object",
+      "required": ["created", "creators"],
+      "properties": {
+        "created": { "type": "string" },
+        "creators": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+      }
+    },
+    "packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["SPDXID", "name", "downloadLocation", "licenseDeclared"],
+        "properties": {
+          "SPDXID": { "type": "string", "pattern": "^SPDXRef-[0-9A-Za-z.\\-]+$" },
+          "name": { "type": "string", "minLength": 1 },
+          "downloadLocation": { "type": "string", "minLength": 1 },
+          "licenseDeclared": { "type": "string", "minLength": 1 },
+          "versionInfo": { "type": "string" },
+          "primaryPackagePurpose": {
+            "type": "string",
+            "enum": [
+              "APPLICATION", "FRAMEWORK", "LIBRARY", "CONTAINER",
+              "OPERATING-SYSTEM", "DEVICE", "FIRMWARE", "SOURCE",
+              "ARCHIVE", "FILE", "INSTALL", "OTHER"
+            ]
+          },
+          "annotations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["annotator", "annotationType", "comment"],
+              "properties": {
+                "annotator": { "type": "string" },
+                "annotationType": {
+                  "type": "string",
+                  "enum": ["REVIEW", "OTHER"]
+                },
+                "comment": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["spdxElementId", "relatedSpdxElement", "relationshipType"],
+        "properties": {
+          "spdxElementId": { "type": "string" },
+          "relatedSpdxElement": { "type": "string" },
+          "relationshipType": {
+            "type": "string",
+            "enum": ["DESCRIBES", "DESCENDANT_OF", "GENERATED_FROM", "DEPENDS_ON", "OTHER"]
+          }
+        }
+      }
+    },
+    "documentDescribes": { "type": "array", "items": { "type": "string" } }
+  }
+}

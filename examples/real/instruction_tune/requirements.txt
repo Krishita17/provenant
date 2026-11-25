@@ -1,0 +1,5 @@
+# An instruction-tuning project referencing real public identifiers.
+transformers==4.40.0
+peft==0.10.0
+torch==2.3.0
+accelerate==0.29.0

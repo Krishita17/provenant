@@ -1,0 +1,312 @@
+{
+  "project": {
+    "name": "instruction_tune",
+    "path": "/Users/krishdhan/ai-policy-gov-sec/Provenant/examples/real/instruction_tune"
+  },
+  "components": [
+    {
+      "id": "dataset:tatsu-lab/alpaca",
+      "type": "dataset",
+      "name": "tatsu-lab/alpaca",
+      "version": "main",
+      "hash": "sha256:cached-alpaca",
+      "source": "https://huggingface.co/datasets/tatsu-lab/alpaca",
+      "source_kind": "huggingface",
+      "license": "cc-by-nc-4.0",
+      "license_source": "fixture",
+      "publisher": "Stanford Tatsu Lab",
+      "publish_date": "2023-03-13",
+      "card_summary": "52K instruction-following demonstrations; non-commercial.",
+      "provenance_status": "resolved",
+      "commercial_use": false,
+      "evidence": [
+        {
+          "source": "config",
+          "detail": "datasets in config/train.yaml",
+          "path": "config/train.yaml",
+          "snippet": "datasets: tatsu-lab/alpaca"
+        },
+        {
+          "source": "code",
+          "detail": "load_dataset in train.py",
+          "path": "train.py",
+          "snippet": "load_dataset(\"tatsu-lab/alpaca\""
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "id": "framework:accelerate",
+      "type": "framework",
+      "name": "accelerate",
+      "version": "0.29.0",
+      "hash": "sha256:cached-accelerate-0-29-0",
+      "source": "https://pypi.org/project/accelerate/",
+      "source_kind": "registry",
+      "license": "apache-2.0",
+      "license_source": "fixture",
+      "publisher": "Hugging Face",
+      "publish_date": "2024-03-29",
+      "card_summary": null,
+      "provenance_status": "resolved",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "source": "requirements",
+          "detail": "pinned in requirements.txt",
+          "path": "requirements.txt",
+          "line": 5,
+          "snippet": "accelerate==0.29.0"
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "id": "framework:peft",
+      "type": "framework",
+      "name": "peft",
+      "version": "0.10.0",
+      "hash": "sha256:cached-peft-0-10-0",
+      "source": "https://pypi.org/project/peft/",
+      "source_kind": "registry",
+      "license": "apache-2.0",
+      "license_source": "fixture",
+      "publisher": "Hugging Face",
+      "publish_date": "2024-03-20",
+      "card_summary": null,
+      "provenance_status": "resolved",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "source": "requirements",
+          "detail": "pinned in requirements.txt",
+          "path": "requirements.txt",
+          "line": 3,
+          "snippet": "peft==0.10.0"
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "id": "framework:torch",
+      "type": "framework",
+      "name": "torch",
+      "version": "2.3.0",
+      "hash": "sha256:cached-torch-2-3-0",
+      "source": "https://pypi.org/project/torch/",
+      "source_kind": "registry",
+      "license": "bsd-3-clause",
+      "license_source": "fixture",
+      "publisher": "Meta",
+      "publish_date": "2024-04-24",
+      "card_summary": null,
+      "provenance_status": "resolved",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "source": "requirements",
+          "detail": "pinned in requirements.txt",
+          "path": "requirements.txt",
+          "line": 4,
+          "snippet": "torch==2.3.0"
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "id": "framework:transformers",
+      "type": "framework",
+      "name": "transformers",
+      "version": "4.40.0",
+      "hash": "sha256:cached-transformers-4-40-0",
+      "source": "https://pypi.org/project/transformers/",
+      "source_kind": "registry",
+      "license": "apache-2.0",
+      "license_source": "fixture",
+      "publisher": "Hugging Face",
+      "publish_date": "2024-04-01",
+      "card_summary": null,
+      "provenance_status": "resolved",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "source": "requirements",
+          "detail": "pinned in requirements.txt",
+          "path": "requirements.txt",
+          "line": 2,
+          "snippet": "transformers==4.40.0"
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "id": "model:acme-user/llama2-alpaca",
+      "type": "model",
+      "name": "acme-user/llama2-alpaca",
+      "version": "v1",
+      "hash": "sha256:19d0de148a09f795a04656e436d79ad541590cd4",
+      "source": null,
+      "source_kind": "local",
+      "license": "apache-2.0",
+      "license_source": "fixture",
+      "publisher": "acme-user",
+      "publish_date": "2024-05-10",
+      "card_summary": "Llama 2 LoRA instruction-tune on Alpaca (first-party).",
+      "provenance_status": "resolved",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "source": "config",
+          "detail": "model_name_or_path in config/train.yaml",
+          "path": "config/train.yaml",
+          "snippet": "model_name_or_path: acme-user/llama2-alpaca"
+        },
+        {
+          "source": "local_artifact",
+          "detail": "weight file models/llama2-alpaca.safetensors",
+          "path": "models/llama2-alpaca.safetensors"
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {
+        "local_path": "models/llama2-alpaca.safetensors"
+      }
+    },
+    {
+      "id": "model:meta-llama/Llama-2-7b-hf",
+      "type": "model",
+      "name": "meta-llama/Llama-2-7b-hf",
+      "version": "main",
+      "hash": "sha256:cached-llama-2-7b-hf",
+      "source": "https://huggingface.co/meta-llama/Llama-2-7b-hf",
+      "source_kind": "huggingface",
+      "license": "llama-2-community",
+      "license_source": "fixture",
+      "publisher": "Meta",
+      "publish_date": "2023-07-18",
+      "card_summary": "7B Llama 2 base model; community license, acceptable-use terms.",
+      "provenance_status": "resolved",
+      "commercial_use": true,
+      "evidence": [
+        {
+          "source": "config",
+          "detail": "base_model in config/train.yaml",
+          "path": "config/train.yaml",
+          "snippet": "base_model: meta-llama/Llama-2-7b-hf"
+        },
+        {
+          "source": "code",
+          "detail": "from_pretrained in train.py",
+          "path": "train.py",
+          "snippet": "AutoModelForCausalLM.from_pretrained(\"meta-llama/Llama-2-7b-hf\""
+        },
+        {
+          "source": "resolver",
+          "detail": "metadata resolved from cached fixture store"
+        }
+      ],
+      "extra": {}
+    }
+  ],
+  "relationships": [
+    {
+      "src": "model:acme-user/llama2-alpaca",
+      "dst": "model:meta-llama/Llama-2-7b-hf",
+      "rel_type": "finetuned_from",
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "source": "config",
+          "detail": "base_model/model_name_or_path in config/train.yaml",
+          "path": "config/train.yaml"
+        }
+      ]
+    },
+    {
+      "src": "model:acme-user/llama2-alpaca",
+      "dst": "dataset:tatsu-lab/alpaca",
+      "rel_type": "trained_on",
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "source": "config",
+          "detail": "datasets in config/train.yaml",
+          "path": "config/train.yaml"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "LIC-NC-001:dataset:tatsu-lab/alpaca",
+      "category": "non_commercial",
+      "severity": "high",
+      "component_id": "dataset:tatsu-lab/alpaca",
+      "rule_id": "LIC-NC-001",
+      "message": "Dataset 'tatsu-lab/alpaca' is under Creative Commons Attribution-NonCommercial 4.0 (non-commercial).",
+      "recommendation": "Do not use in a commercial system without a separate grant; confirm the terms with someone qualified.",
+      "evidence": [
+        {
+          "source": "policy_kb",
+          "detail": "license 'cc-by-nc-4.0' class=non_commercial"
+        }
+      ],
+      "related_component_id": null
+    },
+    {
+      "id": "LIC-INCOMPAT-001:model:acme-user/llama2-alpaca->dataset:tatsu-lab/alpaca",
+      "category": "license_incompatibility",
+      "severity": "high",
+      "component_id": "model:acme-user/llama2-alpaca",
+      "rule_id": "LIC-INCOMPAT-001",
+      "message": "Model 'acme-user/llama2-alpaca' (Apache License 2.0) has a non-commercial component 'tatsu-lab/alpaca' (Creative Commons Attribution-NonCommercial 4.0) in its lineage.",
+      "recommendation": "A commercial release would inherit the non-commercial restriction; re-source the component or restrict use. Confirm with someone qualified.",
+      "evidence": [
+        {
+          "source": "analyzer",
+          "detail": "commercial model reaches a non-commercial component via provenance edges"
+        }
+      ],
+      "related_component_id": "dataset:tatsu-lab/alpaca"
+    },
+    {
+      "id": "LIC-RESTRICT-001:model:meta-llama/Llama-2-7b-hf",
+      "category": "restrictive_license",
+      "severity": "medium",
+      "component_id": "model:meta-llama/Llama-2-7b-hf",
+      "rule_id": "LIC-RESTRICT-001",
+      "message": "Model 'meta-llama/Llama-2-7b-hf' is under Llama 2 Community License (acceptable-use restrictions).",
+      "recommendation": "Review the obligations (e.g. relicensing, redistribution or use-case limits) against your intended use.",
+      "evidence": [
+        {
+          "source": "policy_kb",
+          "detail": "license 'llama-2-community' class=restricted"
+        }
+      ],
+      "related_component_id": null
+    }
+  ]
+}

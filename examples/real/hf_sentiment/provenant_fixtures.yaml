@@ -1,0 +1,44 @@
+# Cached metadata for this project's frameworks and first-party fine-tune.
+# The real public components (distilbert-base-uncased, imdb) resolve from the
+# packaged base metadata store. No weights or datasets are included.
+components:
+  - key: "framework:transformers"
+    type: framework
+    name: transformers
+    source_kind: registry
+    source_url: https://pypi.org/project/transformers/
+    license: apache-2.0
+    publisher: Hugging Face
+    publish_date: "2024-04-01"
+    default_revision: "4.40.0"
+    revisions: {"4.40.0": "sha256:cached-transformers-4-40-0"}
+  - key: "framework:torch"
+    type: framework
+    name: torch
+    source_kind: registry
+    source_url: https://pypi.org/project/torch/
+    license: bsd-3-clause
+    publisher: Meta
+    publish_date: "2024-04-24"
+    default_revision: "2.3.0"
+    revisions: {"2.3.0": "sha256:cached-torch-2-3-0"}
+  - key: "framework:datasets"
+    type: framework
+    name: datasets
+    source_kind: registry
+    source_url: https://pypi.org/project/datasets/
+    license: apache-2.0
+    publisher: Hugging Face
+    publish_date: "2024-04-02"
+    default_revision: "2.19.0"
+    revisions: {"2.19.0": "sha256:cached-datasets-2-19-0"}
+  - key: "model:acme-user/distilbert-imdb"
+    type: model
+    name: acme-user/distilbert-imdb
+    source_kind: local
+    license: apache-2.0
+    publisher: acme-user
+    publish_date: "2024-05-01"
+    default_revision: v1
+    revisions: {v1: "sha256:cached-distilbert-imdb-v1"}
+    card_summary: "DistilBERT fine-tuned on IMDb sentiment (first-party)."

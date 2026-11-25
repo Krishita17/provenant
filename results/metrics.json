@@ -1,0 +1,480 @@
+{
+  "overall": {
+    "n_projects": 6,
+    "discovery_recall": 0.9722,
+    "component": {
+      "precision": 1.0,
+      "recall": 0.975,
+      "f1": 0.9873,
+      "tp": 39,
+      "fp": 0,
+      "fn": 1
+    },
+    "lineage": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 13,
+      "fp": 0,
+      "fn": 0
+    },
+    "finding": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 14,
+      "fp": 0,
+      "fn": 0
+    },
+    "unknown": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "provenance_accuracy": 1.0,
+    "cyclonedx_valid": 6,
+    "spdx_valid": 6,
+    "projects_with_license_conflict": 3,
+    "aggregate": {
+      "by_type": {
+        "dataset": 8,
+        "framework": 17,
+        "model": 14
+      },
+      "by_license_class": {
+        "permissive": 30,
+        "non_commercial": 3,
+        "unknown": 3,
+        "copyleft": 1,
+        "restricted": 2
+      },
+      "by_category": {
+        "non_commercial": 3,
+        "license_incompatibility": 3,
+        "missing_provenance": 2,
+        "flagged_source": 1,
+        "unpinned": 1,
+        "restrictive_license": 3,
+        "license_review": 1
+      },
+      "by_provenance": {
+        "resolved": 37,
+        "partial": 1,
+        "unknown": 1
+      }
+    }
+  },
+  "projects": [
+    {
+      "name": "finetune_stack",
+      "kind": "synthetic",
+      "discovery_recall": 1.0,
+      "component": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 7,
+        "fp": 0,
+        "fn": 0
+      },
+      "lineage": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0
+      },
+      "finding": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "provenance_accuracy": 1.0,
+      "unknown": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "cyclonedx_valid": true,
+      "spdx_valid": true,
+      "breakdown": {
+        "by_type": {
+          "dataset": 2,
+          "framework": 3,
+          "model": 2
+        },
+        "by_license_class": {
+          "permissive": 6,
+          "non_commercial": 1
+        },
+        "by_category": {
+          "non_commercial": 1,
+          "license_incompatibility": 1
+        },
+        "by_provenance": {
+          "resolved": 7
+        }
+      },
+      "counts": {
+        "components": 7,
+        "models": 2,
+        "datasets": 2,
+        "frameworks": 3,
+        "edges": 3,
+        "findings": 2,
+        "has_license_conflict": true
+      }
+    },
+    {
+      "name": "multihop_finetune",
+      "kind": "synthetic",
+      "discovery_recall": 1.0,
+      "component": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 7,
+        "fp": 0,
+        "fn": 0
+      },
+      "lineage": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0
+      },
+      "finding": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "provenance_accuracy": 1.0,
+      "unknown": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "cyclonedx_valid": true,
+      "spdx_valid": true,
+      "breakdown": {
+        "by_type": {
+          "dataset": 2,
+          "framework": 2,
+          "model": 3
+        },
+        "by_license_class": {
+          "permissive": 6,
+          "non_commercial": 1
+        },
+        "by_category": {
+          "non_commercial": 1,
+          "license_incompatibility": 1
+        },
+        "by_provenance": {
+          "resolved": 7
+        }
+      },
+      "counts": {
+        "components": 7,
+        "models": 3,
+        "datasets": 2,
+        "frameworks": 2,
+        "edges": 4,
+        "findings": 2,
+        "has_license_conflict": true
+      }
+    },
+    {
+      "name": "rag_app",
+      "kind": "synthetic",
+      "discovery_recall": 1.0,
+      "component": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 6,
+        "fp": 0,
+        "fn": 0
+      },
+      "lineage": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "finding": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0
+      },
+      "provenance_accuracy": 1.0,
+      "unknown": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "cyclonedx_valid": true,
+      "spdx_valid": true,
+      "breakdown": {
+        "by_type": {
+          "dataset": 1,
+          "framework": 3,
+          "model": 2
+        },
+        "by_license_class": {
+          "permissive": 5,
+          "unknown": 1
+        },
+        "by_category": {
+          "missing_provenance": 1,
+          "flagged_source": 1,
+          "unpinned": 1
+        },
+        "by_provenance": {
+          "resolved": 5,
+          "partial": 1
+        }
+      },
+      "counts": {
+        "components": 6,
+        "models": 2,
+        "datasets": 1,
+        "frameworks": 3,
+        "edges": 0,
+        "findings": 3,
+        "has_license_conflict": false
+      }
+    },
+    {
+      "name": "vision_pipeline",
+      "kind": "synthetic",
+      "discovery_recall": 0.8333,
+      "component": {
+        "precision": 1.0,
+        "recall": 0.8571,
+        "f1": 0.9231,
+        "tp": 6,
+        "fp": 0,
+        "fn": 1
+      },
+      "lineage": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "finding": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0
+      },
+      "provenance_accuracy": 1.0,
+      "unknown": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "cyclonedx_valid": true,
+      "spdx_valid": true,
+      "breakdown": {
+        "by_type": {
+          "dataset": 1,
+          "framework": 2,
+          "model": 3
+        },
+        "by_license_class": {
+          "copyleft": 1,
+          "permissive": 3,
+          "unknown": 1,
+          "restricted": 1
+        },
+        "by_category": {
+          "missing_provenance": 1,
+          "restrictive_license": 2
+        },
+        "by_provenance": {
+          "resolved": 5,
+          "unknown": 1
+        }
+      },
+      "counts": {
+        "components": 6,
+        "models": 3,
+        "datasets": 1,
+        "frameworks": 2,
+        "edges": 2,
+        "findings": 3,
+        "has_license_conflict": false
+      }
+    },
+    {
+      "name": "hf_sentiment",
+      "kind": "real",
+      "discovery_recall": 1.0,
+      "component": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 6,
+        "fp": 0,
+        "fn": 0
+      },
+      "lineage": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "finding": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "provenance_accuracy": 1.0,
+      "unknown": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "cyclonedx_valid": true,
+      "spdx_valid": true,
+      "breakdown": {
+        "by_type": {
+          "dataset": 1,
+          "framework": 3,
+          "model": 2
+        },
+        "by_license_class": {
+          "unknown": 1,
+          "permissive": 5
+        },
+        "by_category": {
+          "license_review": 1
+        },
+        "by_provenance": {
+          "resolved": 6
+        }
+      },
+      "counts": {
+        "components": 6,
+        "models": 2,
+        "datasets": 1,
+        "frameworks": 3,
+        "edges": 2,
+        "findings": 1,
+        "has_license_conflict": false
+      }
+    },
+    {
+      "name": "instruction_tune",
+      "kind": "real",
+      "discovery_recall": 1.0,
+      "component": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 7,
+        "fp": 0,
+        "fn": 0
+      },
+      "lineage": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "finding": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0
+      },
+      "provenance_accuracy": 1.0,
+      "unknown": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "cyclonedx_valid": true,
+      "spdx_valid": true,
+      "breakdown": {
+        "by_type": {
+          "dataset": 1,
+          "framework": 4,
+          "model": 2
+        },
+        "by_license_class": {
+          "non_commercial": 1,
+          "permissive": 5,
+          "restricted": 1
+        },
+        "by_category": {
+          "non_commercial": 1,
+          "license_incompatibility": 1,
+          "restrictive_license": 1
+        },
+        "by_provenance": {
+          "resolved": 7
+        }
+      },
+      "counts": {
+        "components": 7,
+        "models": 2,
+        "datasets": 1,
+        "frameworks": 4,
+        "edges": 2,
+        "findings": 3,
+        "has_license_conflict": true
+      }
+    }
+  ]
+}

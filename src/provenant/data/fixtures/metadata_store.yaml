@@ -1,0 +1,162 @@
+# Provenant base metadata store
+# ------------------------------------------------------------------------------
+# Cached, POINT-IN-TIME metadata snapshots for the real public model/dataset
+# identifiers referenced by the bundled real-style example projects
+# (examples/real/*). They let those projects resolve fully OFFLINE.
+#
+# IMPORTANT: The license strings below are an informational snapshot captured
+# for demonstration and are NOT a legal determination. Licenses and terms change;
+# re-confirm each component's license at its upstream source before relying on
+# it. No model weights or datasets are included here — components are referenced
+# by identifier and (illustrative) revision hash only.
+#
+# snapshot_captured_as_of: 2024-03-01
+# ------------------------------------------------------------------------------
+components:
+  # ----- models ------------------------------------------------------------- #
+  - key: "model:distilbert-base-uncased"
+    type: model
+    name: distilbert-base-uncased
+    source_kind: huggingface
+    source_url: https://huggingface.co/distilbert-base-uncased
+    license: apache-2.0
+    publisher: Hugging Face
+    publish_date: "2019-08-28"
+    default_revision: main
+    revisions:
+      main: "sha256:cached-distilbert-base-uncased"
+    card_summary: "Distilled, uncased BERT base model."
+
+  - key: "model:bert-base-uncased"
+    type: model
+    name: bert-base-uncased
+    source_kind: huggingface
+    source_url: https://huggingface.co/bert-base-uncased
+    license: apache-2.0
+    publisher: Google
+    publish_date: "2018-11-11"
+    default_revision: main
+    revisions:
+      main: "sha256:cached-bert-base-uncased"
+    card_summary: "BERT base, uncased."
+
+  - key: "model:sentence-transformers/all-MiniLM-L6-v2"
+    type: model
+    name: sentence-transformers/all-MiniLM-L6-v2
+    source_kind: huggingface
+    source_url: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+    license: apache-2.0
+    publisher: sentence-transformers
+    publish_date: "2021-08-30"
+    default_revision: main
+    revisions:
+      main: "sha256:cached-all-minilm-l6-v2"
+    card_summary: "384-dim sentence-embedding model."
+
+  - key: "model:meta-llama/Llama-2-7b-hf"
+    type: model
+    name: meta-llama/Llama-2-7b-hf
+    source_kind: huggingface
+    source_url: https://huggingface.co/meta-llama/Llama-2-7b-hf
+    # Custom community license with acceptable-use terms and conditional
+    # commercial grant — classified as restrictive by the policy KB.
+    license: llama-2-community
+    publisher: Meta
+    publish_date: "2023-07-18"
+    default_revision: main
+    revisions:
+      main: "sha256:cached-llama-2-7b-hf"
+    card_summary: "7B Llama 2 base model; community license, acceptable-use terms."
+
+  - key: "model:openai/clip-vit-base-patch32"
+    type: model
+    name: openai/clip-vit-base-patch32
+    source_kind: huggingface
+    source_url: https://huggingface.co/openai/clip-vit-base-patch32
+    license: mit
+    publisher: OpenAI
+    publish_date: "2021-03-01"
+    default_revision: main
+    revisions:
+      main: "sha256:cached-clip-vit-base-patch32"
+    card_summary: "CLIP ViT-B/32 image-text model."
+
+  - key: "model:stabilityai/stable-diffusion-2"
+    type: model
+    name: stabilityai/stable-diffusion-2
+    source_kind: huggingface
+    source_url: https://huggingface.co/stabilityai/stable-diffusion-2
+    license: openrail++
+    publisher: Stability AI
+    publish_date: "2022-11-24"
+    default_revision: main
+    revisions:
+      main: "sha256:cached-stable-diffusion-2"
+    card_summary: "Text-to-image diffusion model; RAIL acceptable-use terms."
+
+  # ----- datasets ----------------------------------------------------------- #
+  - key: "dataset:imdb"
+    type: dataset
+    name: imdb
+    source_kind: huggingface
+    source_url: https://huggingface.co/datasets/imdb
+    # Released for research use; terms are not a standard OSI license.
+    license: other
+    publisher: Stanford AI Lab
+    publish_date: "2011-06-19"
+    default_revision: main
+    revisions:
+      main: "sha256:cached-imdb"
+    card_summary: "Large Movie Review Dataset (sentiment)."
+
+  - key: "dataset:squad"
+    type: dataset
+    name: squad
+    source_kind: huggingface
+    source_url: https://huggingface.co/datasets/squad
+    license: cc-by-sa-4.0
+    publisher: Stanford NLP
+    publish_date: "2016-06-16"
+    default_revision: main
+    revisions:
+      main: "sha256:cached-squad"
+    card_summary: "Stanford Question Answering Dataset."
+
+  - key: "dataset:tatsu-lab/alpaca"
+    type: dataset
+    name: tatsu-lab/alpaca
+    source_kind: huggingface
+    source_url: https://huggingface.co/datasets/tatsu-lab/alpaca
+    license: cc-by-nc-4.0
+    publisher: Stanford Tatsu Lab
+    publish_date: "2023-03-13"
+    default_revision: main
+    revisions:
+      main: "sha256:cached-alpaca"
+    card_summary: "52K instruction-following demonstrations; non-commercial."
+
+  - key: "dataset:databricks/databricks-dolly-15k"
+    type: dataset
+    name: databricks/databricks-dolly-15k
+    source_kind: huggingface
+    source_url: https://huggingface.co/datasets/databricks/databricks-dolly-15k
+    license: cc-by-sa-3.0
+    publisher: Databricks
+    publish_date: "2023-04-12"
+    default_revision: main
+    revisions:
+      main: "sha256:cached-dolly-15k"
+    card_summary: "15K human-generated instruction records; share-alike."
+
+  - key: "dataset:wikitext"
+    type: dataset
+    name: wikitext
+    source_kind: huggingface
+    source_url: https://huggingface.co/datasets/wikitext
+    license: cc-by-sa-3.0
+    publisher: Salesforce
+    publish_date: "2016-09-26"
+    default_revision: main
+    revisions:
+      main: "sha256:cached-wikitext"
+    card_summary: "WikiText language-modeling corpus; share-alike."

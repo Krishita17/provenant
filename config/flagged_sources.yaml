@@ -1,0 +1,16 @@
+# Provenant flagged-source list
+# ------------------------------------------------------------------------------
+# Host substrings / identifier prefixes treated as untrusted or requiring review
+# when a component is sourced from them. This is an editable, illustrative list
+# for the governance workflow — it is NOT a claim that any real service is
+# malicious. Extend with your organization's own allow/deny policy.
+# ------------------------------------------------------------------------------
+flagged_host_substrings:
+  - sketchy-hub
+  - unverified-mirror
+  - anon-weights
+  - pastebin.com
+  - mega.nz
+
+# Identifier prefixes (e.g. an org namespace you do not trust) can be listed too.
+flagged_identifier_prefixes: []

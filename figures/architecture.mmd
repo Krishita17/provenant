@@ -1,0 +1,11 @@
+flowchart TD
+    P["ML project<br/>configs · scripts · model refs · requirements · notebooks"]
+    D1["1 · Component discovery<br/>local artifacts · hub refs · datasets · frameworks"]
+    D2["2 · Metadata resolver<br/>version/hash · source · model & dataset license · card"]
+    D3["3 · Lineage reconstructor<br/>fine-tune → base → datasets (provenance graph)"]
+    KB["License / policy KB<br/>terms · compatibility · flagged sources"]
+    D4["4 · Risk & compliance analyzer<br/>restrictive/NC · incompatibility · missing · unpinned · flagged"]
+    D5["5 · AIBOM assembler<br/>CycloneDX ML-BOM · SPDX AI-profile"]
+    D6["6 · Report generator<br/>AIBOM JSON · provenance graph · risk report · SARIF/MD"]
+    P --> D1 --> D2 --> D3 --> D4 --> D5 --> D6
+    KB --> D4

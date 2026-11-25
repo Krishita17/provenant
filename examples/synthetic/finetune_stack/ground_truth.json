@@ -1,0 +1,105 @@
+{
+  "project": {
+    "name": "finetune_stack",
+    "kind": "synthetic"
+  },
+  "components": [
+    {
+      "id": "framework:transformers",
+      "type": "framework",
+      "name": "transformers",
+      "version": "4.38.0",
+      "license": "apache-2.0",
+      "source_kind": "registry",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "framework:torch",
+      "type": "framework",
+      "name": "torch",
+      "version": "2.2.0",
+      "license": "bsd-3-clause",
+      "source_kind": "registry",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "framework:datasets",
+      "type": "framework",
+      "name": "datasets",
+      "version": "2.18.0",
+      "license": "apache-2.0",
+      "source_kind": "registry",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "model:acme/base-lm-1b",
+      "type": "model",
+      "name": "acme/base-lm-1b",
+      "version": "v1.0",
+      "license": "apache-2.0",
+      "source_kind": "huggingface",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "dataset:research-lab/dialogs-nc",
+      "type": "dataset",
+      "name": "research-lab/dialogs-nc",
+      "version": "v3",
+      "license": "cc-by-nc-4.0",
+      "source_kind": "huggingface",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "dataset:opencorp/instruct-mini",
+      "type": "dataset",
+      "name": "opencorp/instruct-mini",
+      "version": "v2",
+      "license": "apache-2.0",
+      "source_kind": "huggingface",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "model:myorg/base-lm-1b-chat",
+      "type": "model",
+      "name": "myorg/base-lm-1b-chat",
+      "version": "v1.0",
+      "license": "apache-2.0",
+      "source_kind": "local",
+      "provenance_status": "resolved",
+      "file_present": true
+    }
+  ],
+  "relationships": [
+    {
+      "src": "myorg/base-lm-1b-chat",
+      "dst": "acme/base-lm-1b",
+      "rel_type": "finetuned_from"
+    },
+    {
+      "src": "myorg/base-lm-1b-chat",
+      "dst": "research-lab/dialogs-nc",
+      "rel_type": "trained_on"
+    },
+    {
+      "src": "myorg/base-lm-1b-chat",
+      "dst": "opencorp/instruct-mini",
+      "rel_type": "trained_on"
+    }
+  ],
+  "expected_findings": [
+    {
+      "component_id": "dataset:research-lab/dialogs-nc",
+      "category": "non_commercial"
+    },
+    {
+      "component_id": "model:myorg/base-lm-1b-chat",
+      "category": "license_incompatibility"
+    }
+  ]
+}

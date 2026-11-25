@@ -1,0 +1,8 @@
+component,type,version,hash,source,license,license_class,provenance,lineage_parent,risk
+opencorp/instruct-mini,dataset,v2,sha256:a6eb14260e3c,https://huggingface.co/datasets/opencorp/instruct-mini,apache-2.0,permissive,resolved,,-
+research-lab/dialogs-nc,dataset,v3,sha256:77b188712971,https://huggingface.co/datasets/research-lab/dialogs-nc,cc-by-nc-4.0,non_commercial,resolved,,non_commercial
+datasets,framework,2.18.0,sha256:c49191708802,https://pypi.org/project/datasets/,apache-2.0,permissive,resolved,,-
+torch,framework,2.2.0,sha256:d28827b18d1a,https://pypi.org/project/torch/,bsd-3-clause,permissive,resolved,,-
+transformers,framework,4.38.0,sha256:0338da51c509,https://pypi.org/project/transformers/,apache-2.0,permissive,resolved,,-
+acme/base-lm-1b,model,v1.0,sha256:7685a80f88b4,https://huggingface.co/acme/base-lm-1b,apache-2.0,permissive,resolved,,-
+myorg/base-lm-1b-chat,model,v1.0,sha256:91de06df17c2,local,apache-2.0,permissive,resolved,acme/base-lm-1b,license_incompatibility

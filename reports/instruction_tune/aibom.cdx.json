@@ -1,0 +1,372 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:33d0c029-4c67-507a-9322-af4b3f763d3f",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-01-01T00:00:00Z",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "provenant",
+          "version": "0.1.0"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "name": "instruction_tune",
+      "bom-ref": "app:instruction-tune"
+    }
+  },
+  "components": [
+    {
+      "type": "data",
+      "bom-ref": "dataset:tatsu-lab/alpaca",
+      "name": "tatsu-lab/alpaca",
+      "version": "main",
+      "licenses": [
+        {
+          "license": {
+            "name": "cc-by-nc-4.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://huggingface.co/datasets/tatsu-lab/alpaca"
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "huggingface"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "Stanford Tatsu Lab"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2023-03-13"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:cached-alpaca"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "framework:accelerate",
+      "name": "accelerate",
+      "version": "0.29.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "apache-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://pypi.org/project/accelerate/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "registry"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "Hugging Face"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2024-03-29"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:cached-accelerate-0-29-0"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "framework:peft",
+      "name": "peft",
+      "version": "0.10.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "apache-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://pypi.org/project/peft/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "registry"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "Hugging Face"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2024-03-20"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:cached-peft-0-10-0"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "framework:torch",
+      "name": "torch",
+      "version": "2.3.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "bsd-3-clause"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://pypi.org/project/torch/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "registry"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "Meta"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2024-04-24"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:cached-torch-2-3-0"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "framework:transformers",
+      "name": "transformers",
+      "version": "4.40.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "apache-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://pypi.org/project/transformers/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "registry"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "Hugging Face"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2024-04-01"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:cached-transformers-4-40-0"
+        }
+      ]
+    },
+    {
+      "type": "machine-learning-model",
+      "bom-ref": "model:acme-user/llama2-alpaca",
+      "name": "acme-user/llama2-alpaca",
+      "version": "v1",
+      "licenses": [
+        {
+          "license": {
+            "name": "apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "local"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "acme-user"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2024-05-10"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:19d0de148a09f795a04656e436d79ad541590cd4"
+        }
+      ],
+      "modelCard": {
+        "properties": [
+          {
+            "name": "summary",
+            "value": "Llama 2 LoRA instruction-tune on Alpaca (first-party)."
+          }
+        ]
+      }
+    },
+    {
+      "type": "machine-learning-model",
+      "bom-ref": "model:meta-llama/Llama-2-7b-hf",
+      "name": "meta-llama/Llama-2-7b-hf",
+      "version": "main",
+      "licenses": [
+        {
+          "license": {
+            "name": "llama-2-community"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://huggingface.co/meta-llama/Llama-2-7b-hf"
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "huggingface"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "Meta"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2023-07-18"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:cached-llama-2-7b-hf"
+        }
+      ],
+      "modelCard": {
+        "properties": [
+          {
+            "name": "summary",
+            "value": "7B Llama 2 base model; community license, acceptable-use terms."
+          }
+        ]
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "model:acme-user/llama2-alpaca",
+      "dependsOn": [
+        "dataset:tatsu-lab/alpaca",
+        "model:meta-llama/Llama-2-7b-hf"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "bom-ref": "finding-0",
+      "subjects": [
+        "dataset:tatsu-lab/alpaca"
+      ],
+      "annotator": {
+        "organization": {
+          "name": "Provenant"
+        }
+      },
+      "timestamp": "2026-01-01T00:00:00Z",
+      "text": "[HIGH][LIC-NC-001] Dataset 'tatsu-lab/alpaca' is under Creative Commons Attribution-NonCommercial 4.0 (non-commercial)."
+    },
+    {
+      "bom-ref": "finding-1",
+      "subjects": [
+        "model:acme-user/llama2-alpaca"
+      ],
+      "annotator": {
+        "organization": {
+          "name": "Provenant"
+        }
+      },
+      "timestamp": "2026-01-01T00:00:00Z",
+      "text": "[HIGH][LIC-INCOMPAT-001] Model 'acme-user/llama2-alpaca' (Apache License 2.0) has a non-commercial component 'tatsu-lab/alpaca' (Creative Commons Attribution-NonCommercial 4.0) in its lineage."
+    },
+    {
+      "bom-ref": "finding-2",
+      "subjects": [
+        "model:meta-llama/Llama-2-7b-hf"
+      ],
+      "annotator": {
+        "organization": {
+          "name": "Provenant"
+        }
+      },
+      "timestamp": "2026-01-01T00:00:00Z",
+      "text": "[MEDIUM][LIC-RESTRICT-001] Model 'meta-llama/Llama-2-7b-hf' is under Llama 2 Community License (acceptable-use restrictions)."
+    }
+  ]
+}

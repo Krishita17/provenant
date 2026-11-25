@@ -1,0 +1,86 @@
+# Cached, point-in-time metadata for this project's components.
+# Offline resolution source; no weights or datasets are included.
+components:
+- key: framework:transformers
+  type: framework
+  name: transformers
+  source_kind: registry
+  license: apache-2.0
+  publisher: Hugging Face
+  publish_date: '2024-01-15'
+  card_summary: transformers 4.38.0 (PyPI).
+  source_url: https://pypi.org/project/transformers/
+  revisions:
+    4.38.0: sha256:0338da51c509d39a3c5ceafb6f96573fede4875c
+  default_revision: 4.38.0
+- key: framework:torch
+  type: framework
+  name: torch
+  source_kind: registry
+  license: bsd-3-clause
+  publisher: Meta
+  publish_date: '2024-01-15'
+  card_summary: torch 2.2.0 (PyPI).
+  source_url: https://pypi.org/project/torch/
+  revisions:
+    2.2.0: sha256:d28827b18d1a2c3b6bab5d4a75086324755d1032
+  default_revision: 2.2.0
+- key: framework:datasets
+  type: framework
+  name: datasets
+  source_kind: registry
+  license: apache-2.0
+  publisher: Hugging Face
+  publish_date: '2024-01-15'
+  card_summary: datasets 2.18.0 (PyPI).
+  source_url: https://pypi.org/project/datasets/
+  revisions:
+    2.18.0: sha256:c4919170880243d6507d65e56af38e5602947e24
+  default_revision: 2.18.0
+- key: model:acme/base-lm-1b
+  type: model
+  name: acme/base-lm-1b
+  source_kind: huggingface
+  license: apache-2.0
+  publisher: acme
+  publish_date: '2023-09-01'
+  card_summary: A 1B-parameter base language model.
+  source_url: https://huggingface.co/acme/base-lm-1b
+  revisions:
+    v1.0: sha256:7685a80f88b495d6232a1c20151327902b110f5a
+  default_revision: v1.0
+- key: dataset:research-lab/dialogs-nc
+  type: dataset
+  name: research-lab/dialogs-nc
+  source_kind: huggingface
+  license: cc-by-nc-4.0
+  publisher: research-lab
+  publish_date: '2023-05-10'
+  card_summary: Dialogue corpus released for non-commercial research use.
+  source_url: https://huggingface.co/datasets/research-lab/dialogs-nc
+  revisions:
+    v3: sha256:77b188712971e74ab7c45b56a975370b2ada2fc1
+  default_revision: v3
+- key: dataset:opencorp/instruct-mini
+  type: dataset
+  name: opencorp/instruct-mini
+  source_kind: huggingface
+  license: apache-2.0
+  publisher: opencorp
+  publish_date: '2023-11-20'
+  card_summary: Small permissive instruction-tuning dataset.
+  source_url: https://huggingface.co/datasets/opencorp/instruct-mini
+  revisions:
+    v2: sha256:a6eb14260e3c8ea7e256737c1349d111bdd05062
+  default_revision: v2
+- key: model:myorg/base-lm-1b-chat
+  type: model
+  name: myorg/base-lm-1b-chat
+  source_kind: local
+  license: apache-2.0
+  publisher: myorg
+  publish_date: '2024-02-01'
+  card_summary: Chat fine-tune of acme/base-lm-1b.
+  revisions:
+    v1.0: sha256:00cd6b910583b7cf1ea2afad42df8b5c2f4a3b0a
+  default_revision: v1.0

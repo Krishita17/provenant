@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+
+# Editor
+.idea/
+.vscode/
+
+# Generated working artifacts (regenerable via `make`).
+# The committed, worked examples live in results/, figures/, reports/ and are
+# regenerable; transient scratch output goes here.
+.work/
+*.tmp

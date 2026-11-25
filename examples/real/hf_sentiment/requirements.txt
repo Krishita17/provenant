@@ -1,0 +1,7 @@
+# A small, realistic sentiment fine-tune project referencing real public
+# identifiers (resolved offline from Provenant's cached metadata store).
+transformers==4.40.0
+torch==2.3.0
+datasets==2.19.0
+numpy==1.26.0
+scikit-learn==1.4.0

@@ -1,0 +1,204 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "instruction_tune",
+  "documentNamespace": "https://provenant.example/spdx/instruction_tune/347a3dcf-bcf1-521a-b6bb-d220d02e71ad",
+  "creationInfo": {
+    "created": "2026-01-01T00:00:00Z",
+    "creators": [
+      "Tool: provenant-0.1.0"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-dataset-0-tatsu-lab-alpaca",
+      "name": "tatsu-lab/alpaca",
+      "downloadLocation": "https://huggingface.co/datasets/tatsu-lab/alpaca",
+      "licenseDeclared": "CC-BY-NC-4.0",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "main",
+      "supplier": "Organization: Stanford Tatsu Lab",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=dataset; provenance_status=resolved; source_kind=huggingface; content_hash=sha256:cached-alpaca"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-framework-1-accelerate",
+      "name": "accelerate",
+      "downloadLocation": "https://pypi.org/project/accelerate/",
+      "licenseDeclared": "Apache-2.0",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "0.29.0",
+      "supplier": "Organization: Hugging Face",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=framework; provenance_status=resolved; source_kind=registry; content_hash=sha256:cached-accelerate-0-29-0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-framework-2-peft",
+      "name": "peft",
+      "downloadLocation": "https://pypi.org/project/peft/",
+      "licenseDeclared": "Apache-2.0",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "0.10.0",
+      "supplier": "Organization: Hugging Face",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=framework; provenance_status=resolved; source_kind=registry; content_hash=sha256:cached-peft-0-10-0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-framework-3-torch",
+      "name": "torch",
+      "downloadLocation": "https://pypi.org/project/torch/",
+      "licenseDeclared": "BSD-3-Clause",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "2.3.0",
+      "supplier": "Organization: Meta",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=framework; provenance_status=resolved; source_kind=registry; content_hash=sha256:cached-torch-2-3-0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-framework-4-transformers",
+      "name": "transformers",
+      "downloadLocation": "https://pypi.org/project/transformers/",
+      "licenseDeclared": "Apache-2.0",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "4.40.0",
+      "supplier": "Organization: Hugging Face",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=framework; provenance_status=resolved; source_kind=registry; content_hash=sha256:cached-transformers-4-40-0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-model-5-acme-user-llama2-alpaca",
+      "name": "acme-user/llama2-alpaca",
+      "downloadLocation": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "v1",
+      "supplier": "Organization: acme-user",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=model; provenance_status=resolved; source_kind=local; content_hash=sha256:19d0de148a09f795a04656e436d79ad541590cd4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-model-6-meta-llama-Llama-2-7b-hf",
+      "name": "meta-llama/Llama-2-7b-hf",
+      "downloadLocation": "https://huggingface.co/meta-llama/Llama-2-7b-hf",
+      "licenseDeclared": "LicenseRef-llama-2-community",
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "OTHER",
+      "versionInfo": "main",
+      "supplier": "Organization: Meta",
+      "annotations": [
+        {
+          "annotator": "Tool: provenant-0.1.0",
+          "annotationDate": "2026-01-01T00:00:00Z",
+          "annotationType": "OTHER",
+          "comment": "ai-profile: type=model; provenance_status=resolved; source_kind=huggingface; content_hash=sha256:cached-llama-2-7b-hf"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-dataset-0-tatsu-lab-alpaca",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-framework-1-accelerate",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-framework-2-peft",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-framework-3-torch",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-framework-4-transformers",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-model-5-acme-user-llama2-alpaca",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-model-6-meta-llama-Llama-2-7b-hf",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-model-5-acme-user-llama2-alpaca",
+      "relatedSpdxElement": "SPDXRef-model-6-meta-llama-Llama-2-7b-hf",
+      "relationshipType": "DESCENDANT_OF"
+    },
+    {
+      "spdxElementId": "SPDXRef-model-5-acme-user-llama2-alpaca",
+      "relatedSpdxElement": "SPDXRef-dataset-0-tatsu-lab-alpaca",
+      "relationshipType": "GENERATED_FROM"
+    }
+  ],
+  "documentDescribes": [
+    "SPDXRef-dataset-0-tatsu-lab-alpaca",
+    "SPDXRef-framework-1-accelerate",
+    "SPDXRef-framework-2-peft",
+    "SPDXRef-framework-3-torch",
+    "SPDXRef-framework-4-transformers",
+    "SPDXRef-model-5-acme-user-llama2-alpaca",
+    "SPDXRef-model-6-meta-llama-Llama-2-7b-hf"
+  ]
+}

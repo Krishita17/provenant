@@ -1,0 +1,12 @@
+# Provenant pipeline policy / output toggles.
+output:
+  cyclonedx: true          # emit CycloneDX ML-BOM
+  spdx: true               # emit SPDX AI-profile document
+  sarif: true              # emit SARIF for CI consumption
+  markdown: true           # emit the human-readable risk report
+
+analysis:
+  # See config/license_kb.yaml defaults.assume_commercial_use.
+  assume_commercial_use: true
+  # Minimum severity to include in the SARIF export (info|low|medium|high).
+  sarif_min_severity: low

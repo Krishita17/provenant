@@ -1,0 +1,90 @@
+# Cached, point-in-time metadata for this project's components.
+# Offline resolution source; no weights or datasets are included.
+components:
+- key: framework:transformers
+  type: framework
+  name: transformers
+  source_kind: registry
+  license: apache-2.0
+  publisher: Hugging Face
+  publish_date: '2024-01-15'
+  card_summary: transformers 4.38.0 (PyPI).
+  source_url: https://pypi.org/project/transformers/
+  revisions:
+    4.38.0: sha256:0338da51c509d39a3c5ceafb6f96573fede4875c
+  default_revision: 4.38.0
+- key: framework:peft
+  type: framework
+  name: peft
+  source_kind: registry
+  license: apache-2.0
+  publisher: Hugging Face
+  publish_date: '2024-01-15'
+  card_summary: peft 0.9.0 (PyPI).
+  source_url: https://pypi.org/project/peft/
+  revisions:
+    0.9.0: sha256:32861992b9827aacc105f10d602c0fc8a00de8ad
+  default_revision: 0.9.0
+- key: model:acme/foundation-7b
+  type: model
+  name: acme/foundation-7b
+  source_kind: huggingface
+  license: apache-2.0
+  publisher: acme
+  publish_date: '2023-07-01'
+  card_summary: 7B foundation model.
+  source_url: https://huggingface.co/acme/foundation-7b
+  revisions:
+    v1.0: sha256:7ca318dd79b6b568fbf7a474573607fea67ea444
+  default_revision: v1.0
+- key: model:labA/foundation-7b-sft
+  type: model
+  name: labA/foundation-7b-sft
+  source_kind: huggingface
+  license: apache-2.0
+  publisher: labA
+  publish_date: '2023-10-01'
+  card_summary: Supervised fine-tune of acme/foundation-7b.
+  source_url: https://huggingface.co/labA/foundation-7b-sft
+  revisions:
+    v2.0: sha256:3e9809fa66bfcfb157df10fab3c39e768515749e
+  default_revision: v2.0
+  card:
+    base_model: acme/foundation-7b
+    datasets:
+    - labA/sft-mix
+- key: dataset:labA/sft-mix
+  type: dataset
+  name: labA/sft-mix
+  source_kind: huggingface
+  license: apache-2.0
+  publisher: labA
+  publish_date: '2023-09-10'
+  card_summary: Permissive SFT mixture.
+  source_url: https://huggingface.co/datasets/labA/sft-mix
+  revisions:
+    v1: sha256:44fc0d527b6ffcfc5370da3009cdbdf71f30a6d6
+  default_revision: v1
+- key: dataset:labB/dialogs-nc
+  type: dataset
+  name: labB/dialogs-nc
+  source_kind: huggingface
+  license: cc-by-nc-4.0
+  publisher: labB
+  publish_date: '2024-01-05'
+  card_summary: Dialogue data, non-commercial license.
+  source_url: https://huggingface.co/datasets/labB/dialogs-nc
+  revisions:
+    v1: sha256:d53d88e78151ebbf7568055857f55b1198e66f3e
+  default_revision: v1
+- key: model:labB/foundation-7b-chat
+  type: model
+  name: labB/foundation-7b-chat
+  source_kind: local
+  license: apache-2.0
+  publisher: labB
+  publish_date: '2024-02-15'
+  card_summary: Chat fine-tune of labA/foundation-7b-sft.
+  revisions:
+    v1.0: sha256:44c65813cf35227ceae5724054810426898067bd
+  default_revision: v1.0

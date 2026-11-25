@@ -1,0 +1,6 @@
+# Sentiment fine-tune configuration.
+base_model: distilbert-base-uncased
+model_name_or_path: acme-user/distilbert-imdb
+datasets:
+  - imdb
+num_labels: 2

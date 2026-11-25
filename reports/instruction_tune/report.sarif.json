@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Provenant",
+          "version": "0.1.0",
+          "informationUri": "https://github.com/Krishita17/provenant",
+          "rules": [
+            {
+              "id": "LIC-INCOMPAT-001",
+              "name": "LIC-INCOMPAT-001",
+              "shortDescription": {
+                "text": "A commercially-usable model has a non-commercial component in its lineage."
+              }
+            },
+            {
+              "id": "LIC-NC-001",
+              "name": "LIC-NC-001",
+              "shortDescription": {
+                "text": "Component is under a non-commercial license."
+              }
+            },
+            {
+              "id": "LIC-RESTRICT-001",
+              "name": "LIC-RESTRICT-001",
+              "shortDescription": {
+                "text": "Component license carries share-alike / acceptable-use / copyleft obligations."
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "LIC-NC-001",
+          "level": "error",
+          "message": {
+            "text": "Dataset 'tatsu-lab/alpaca' is under Creative Commons Attribution-NonCommercial 4.0 (non-commercial). Recommendation: Do not use in a commercial system without a separate grant; confirm the terms with someone qualified."
+          },
+          "properties": {
+            "category": "non_commercial",
+            "component": "dataset:tatsu-lab/alpaca",
+            "severity": "high"
+          }
+        },
+        {
+          "ruleId": "LIC-INCOMPAT-001",
+          "level": "error",
+          "message": {
+            "text": "Model 'acme-user/llama2-alpaca' (Apache License 2.0) has a non-commercial component 'tatsu-lab/alpaca' (Creative Commons Attribution-NonCommercial 4.0) in its lineage. Recommendation: A commercial release would inherit the non-commercial restriction; re-source the component or restrict use. Confirm with someone qualified."
+          },
+          "properties": {
+            "category": "license_incompatibility",
+            "component": "model:acme-user/llama2-alpaca",
+            "severity": "high",
+            "related_component": "dataset:tatsu-lab/alpaca"
+          }
+        },
+        {
+          "ruleId": "LIC-RESTRICT-001",
+          "level": "warning",
+          "message": {
+            "text": "Model 'meta-llama/Llama-2-7b-hf' is under Llama 2 Community License (acceptable-use restrictions). Recommendation: Review the obligations (e.g. relicensing, redistribution or use-case limits) against your intended use."
+          },
+          "properties": {
+            "category": "restrictive_license",
+            "component": "model:meta-llama/Llama-2-7b-hf",
+            "severity": "medium"
+          }
+        }
+      ]
+    }
+  ]
+}

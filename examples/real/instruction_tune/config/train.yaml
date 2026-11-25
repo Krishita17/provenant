@@ -1,0 +1,6 @@
+# Instruction-tuning configuration.
+base_model: meta-llama/Llama-2-7b-hf
+model_name_or_path: acme-user/llama2-alpaca
+datasets:
+  - tatsu-lab/alpaca
+lora_r: 16

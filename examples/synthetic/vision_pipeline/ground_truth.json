@@ -1,0 +1,104 @@
+{
+  "project": {
+    "name": "vision_pipeline",
+    "kind": "synthetic"
+  },
+  "components": [
+    {
+      "id": "framework:onnxruntime",
+      "type": "framework",
+      "name": "onnxruntime",
+      "version": "1.17.0",
+      "license": "mit",
+      "source_kind": "registry",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "framework:onnx",
+      "type": "framework",
+      "name": "onnx",
+      "version": "1.15.0",
+      "license": "apache-2.0",
+      "source_kind": "registry",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "dataset:data/streetscapes_raw",
+      "type": "dataset",
+      "name": "data/streetscapes_raw",
+      "version": null,
+      "license": null,
+      "source_kind": "local",
+      "provenance_status": "unknown",
+      "file_present": true
+    },
+    {
+      "id": "model:models/detector.onnx",
+      "type": "model",
+      "name": "models/detector.onnx",
+      "version": null,
+      "license": null,
+      "source_kind": "local",
+      "provenance_status": "unknown",
+      "file_present": true
+    },
+    {
+      "id": "model:visionlab/segmenter-v2",
+      "type": "model",
+      "name": "visionlab/segmenter-v2",
+      "version": "v2.1",
+      "license": "openrail",
+      "source_kind": "huggingface",
+      "provenance_status": "resolved",
+      "file_present": true
+    },
+    {
+      "id": "model:visionlab/segmenter-base",
+      "type": "model",
+      "name": "visionlab/segmenter-base",
+      "version": "v1.0",
+      "license": "apache-2.0",
+      "source_kind": "huggingface",
+      "provenance_status": "resolved",
+      "file_present": false
+    },
+    {
+      "id": "dataset:opencorp/streetscapes",
+      "type": "dataset",
+      "name": "opencorp/streetscapes",
+      "version": "v1",
+      "license": "cc-by-sa-4.0",
+      "source_kind": "huggingface",
+      "provenance_status": "resolved",
+      "file_present": true
+    }
+  ],
+  "relationships": [
+    {
+      "src": "visionlab/segmenter-v2",
+      "dst": "visionlab/segmenter-base",
+      "rel_type": "finetuned_from"
+    },
+    {
+      "src": "visionlab/segmenter-v2",
+      "dst": "opencorp/streetscapes",
+      "rel_type": "trained_on"
+    }
+  ],
+  "expected_findings": [
+    {
+      "component_id": "model:models/detector.onnx",
+      "category": "missing_provenance"
+    },
+    {
+      "component_id": "model:visionlab/segmenter-v2",
+      "category": "restrictive_license"
+    },
+    {
+      "component_id": "dataset:opencorp/streetscapes",
+      "category": "restrictive_license"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+# Provenant license knowledge base
+# ------------------------------------------------------------------------------
+# Editable classification of common model & dataset licenses. These are
+# INFORMATIONAL groupings to support human review; they are NOT a legal license
+# determination. Extend freely — the analyzer reads classes/flags, so adding a
+# license here immediately teaches the tool about it.
+#
+# class: permissive | copyleft | non_commercial | restricted | public_domain | unknown
+# commercial_use: true | false | conditional
+# share_alike: whether downstream must relicense under the same terms
+# acceptable_use_restrictions: whether use-case restrictions (RAIL/AUP) apply
+# ------------------------------------------------------------------------------
+version: "2024.03"
+licenses:
+  apache-2.0:
+    display_name: Apache License 2.0
+    class: permissive
+    commercial_use: true
+    share_alike: false
+    acceptable_use_restrictions: false
+    url: https://www.apache.org/licenses/LICENSE-2.0
+
+  mit:
+    display_name: MIT License
+    class: permissive
+    commercial_use: true
+    share_alike: false
+    acceptable_use_restrictions: false
+    url: https://opensource.org/license/mit
+
+  bsd-3-clause:
+    display_name: BSD 3-Clause
+    class: permissive
+    commercial_use: true
+    share_alike: false
+    acceptable_use_restrictions: false
+    url: https://opensource.org/license/bsd-3-clause
+
+  cc0-1.0:
+    display_name: Creative Commons Zero v1.0
+    class: public_domain
+    commercial_use: true
+    share_alike: false
+    acceptable_use_restrictions: false
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+
+  cc-by-4.0:
+    display_name: Creative Commons Attribution 4.0
+    class: permissive
+    commercial_use: true
+    share_alike: false
+    acceptable_use_restrictions: false
+    attribution: true
+    url: https://creativecommons.org/licenses/by/4.0/
+
+  cc-by-sa-4.0:
+    display_name: Creative Commons Attribution-ShareAlike 4.0
+    class: copyleft
+    commercial_use: true
+    share_alike: true
+    acceptable_use_restrictions: false
+    url: https://creativecommons.org/licenses/by-sa/4.0/
+
+  cc-by-sa-3.0:
+    display_name: Creative Commons Attribution-ShareAlike 3.0
+    class: copyleft
+    commercial_use: true
+    share_alike: true
+    acceptable_use_restrictions: false
+    url: https://creativecommons.org/licenses/by-sa/3.0/
+
+  cc-by-nc-4.0:
+    display_name: Creative Commons Attribution-NonCommercial 4.0
+    class: non_commercial
+    commercial_use: false
+    share_alike: false
+    acceptable_use_restrictions: false
+    url: https://creativecommons.org/licenses/by-nc/4.0/
+
+  gpl-3.0:
+    display_name: GNU General Public License v3.0
+    class: copyleft
+    commercial_use: true
+    share_alike: true
+    acceptable_use_restrictions: false
+    url: https://www.gnu.org/licenses/gpl-3.0.en.html
+
+  agpl-3.0:
+    display_name: GNU Affero General Public License v3.0
+    class: copyleft
+    commercial_use: true
+    share_alike: true
+    acceptable_use_restrictions: false
+    url: https://www.gnu.org/licenses/agpl-3.0.en.html
+
+  openrail:
+    display_name: OpenRAIL (Responsible AI License)
+    class: restricted
+    commercial_use: conditional
+    share_alike: false
+    acceptable_use_restrictions: true
+    url: https://www.licenses.ai/
+
+  openrail++:
+    display_name: OpenRAIL++-M
+    class: restricted
+    commercial_use: conditional
+    share_alike: false
+    acceptable_use_restrictions: true
+    url: https://huggingface.co/stabilityai/stable-diffusion-2/blob/main/LICENSE-MODEL
+
+  llama-2-community:
+    display_name: Llama 2 Community License
+    class: restricted
+    commercial_use: conditional
+    share_alike: false
+    acceptable_use_restrictions: true
+    url: https://ai.meta.com/llama/license/
+
+  proprietary:
+    display_name: Proprietary / All rights reserved
+    class: restricted
+    commercial_use: false
+    share_alike: false
+    acceptable_use_restrictions: true
+
+  other:
+    display_name: Other / non-standard terms
+    class: unknown
+    commercial_use: conditional
+    share_alike: false
+    acceptable_use_restrictions: false
+
+defaults:
+  # Governance assumption used when evaluating cross-lineage conflicts: unless
+  # told otherwise, Provenant assumes the assembled system may be used
+  # commercially, so non-commercial components in the lineage are surfaced.
+  assume_commercial_use: true
+  unknown_license_class: unknown

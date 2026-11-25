@@ -1,0 +1,60 @@
+# Cached, point-in-time metadata for this project's components.
+# Offline resolution source; no weights or datasets are included.
+components:
+- key: framework:langchain
+  type: framework
+  name: langchain
+  source_kind: registry
+  license: mit
+  publisher: LangChain
+  publish_date: '2024-01-15'
+  card_summary: langchain 0.1.0 (PyPI).
+  source_url: https://pypi.org/project/langchain/
+  revisions:
+    0.1.0: sha256:bc13d90b8609830fd3becdce0cd7fc267c269683
+  default_revision: 0.1.0
+- key: framework:sentence-transformers
+  type: framework
+  name: sentence-transformers
+  source_kind: registry
+  license: apache-2.0
+  publisher: UKP Lab
+  publish_date: '2024-01-15'
+  card_summary: sentence-transformers 2.5.0 (PyPI).
+  source_url: https://pypi.org/project/sentence-transformers/
+  revisions:
+    2.5.0: sha256:5368f45e50adf274459007525cc973d0a6a71627
+  default_revision: 2.5.0
+- key: framework:faiss-cpu
+  type: framework
+  name: faiss-cpu
+  source_kind: registry
+  license: mit
+  publisher: Meta
+  publish_date: '2024-01-15'
+  card_summary: faiss-cpu 1.8.0 (PyPI).
+  source_url: https://pypi.org/project/faiss-cpu/
+  revisions:
+    1.8.0: sha256:caae2602a792ec5c6869b95763d1f391edcfcc95
+  default_revision: 1.8.0
+- key: model:opencorp/minilm-embed
+  type: model
+  name: opencorp/minilm-embed
+  source_kind: huggingface
+  license: apache-2.0
+  publisher: opencorp
+  publish_date: '2023-08-01'
+  card_summary: Small sentence-embedding model.
+  source_url: https://huggingface.co/opencorp/minilm-embed
+- key: dataset:opencorp/faq-corpus
+  type: dataset
+  name: opencorp/faq-corpus
+  source_kind: huggingface
+  license: cc-by-4.0
+  publisher: opencorp
+  publish_date: '2023-10-05'
+  card_summary: FAQ pairs for retrieval demos.
+  source_url: https://huggingface.co/datasets/opencorp/faq-corpus
+  revisions:
+    v1: sha256:4c6e844daea641b3b2585ef72e9f2b84a6efb8ef
+  default_revision: v1

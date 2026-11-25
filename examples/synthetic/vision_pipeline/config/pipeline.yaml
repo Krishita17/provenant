@@ -1,0 +1,4 @@
+# Synthetic training/inference config.
+datasets:
+- opencorp/streetscapes
+segmenter: visionlab/segmenter-v2@v2.1

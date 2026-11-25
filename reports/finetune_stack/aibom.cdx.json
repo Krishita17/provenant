@@ -1,0 +1,360 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:719a7770-2109-5f8e-ad17-85f15bb40811",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-01-01T00:00:00Z",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "provenant",
+          "version": "0.1.0"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "name": "finetune_stack",
+      "bom-ref": "app:finetune-stack"
+    }
+  },
+  "components": [
+    {
+      "type": "data",
+      "bom-ref": "dataset:opencorp/instruct-mini",
+      "name": "opencorp/instruct-mini",
+      "version": "v2",
+      "licenses": [
+        {
+          "license": {
+            "name": "apache-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://huggingface.co/datasets/opencorp/instruct-mini"
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "huggingface"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "opencorp"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2023-11-20"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:a6eb14260e3c8ea7e256737c1349d111bdd05062"
+        }
+      ]
+    },
+    {
+      "type": "data",
+      "bom-ref": "dataset:research-lab/dialogs-nc",
+      "name": "research-lab/dialogs-nc",
+      "version": "v3",
+      "licenses": [
+        {
+          "license": {
+            "name": "cc-by-nc-4.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://huggingface.co/datasets/research-lab/dialogs-nc"
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "huggingface"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "research-lab"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2023-05-10"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:77b188712971e74ab7c45b56a975370b2ada2fc1"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "framework:datasets",
+      "name": "datasets",
+      "version": "2.18.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "apache-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://pypi.org/project/datasets/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "registry"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "Hugging Face"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2024-01-15"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:c4919170880243d6507d65e56af38e5602947e24"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "framework:torch",
+      "name": "torch",
+      "version": "2.2.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "bsd-3-clause"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://pypi.org/project/torch/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "registry"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "Meta"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2024-01-15"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:d28827b18d1a2c3b6bab5d4a75086324755d1032"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "framework:transformers",
+      "name": "transformers",
+      "version": "4.38.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "apache-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://pypi.org/project/transformers/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "registry"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "Hugging Face"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2024-01-15"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:0338da51c509d39a3c5ceafb6f96573fede4875c"
+        }
+      ]
+    },
+    {
+      "type": "machine-learning-model",
+      "bom-ref": "model:acme/base-lm-1b",
+      "name": "acme/base-lm-1b",
+      "version": "v1.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "apache-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://huggingface.co/acme/base-lm-1b"
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "huggingface"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "acme"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2023-09-01"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:7685a80f88b495d6232a1c20151327902b110f5a"
+        }
+      ],
+      "modelCard": {
+        "properties": [
+          {
+            "name": "summary",
+            "value": "A 1B-parameter base language model."
+          }
+        ]
+      }
+    },
+    {
+      "type": "machine-learning-model",
+      "bom-ref": "model:myorg/base-lm-1b-chat",
+      "name": "myorg/base-lm-1b-chat",
+      "version": "v1.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "provenant:provenance_status",
+          "value": "resolved"
+        },
+        {
+          "name": "provenant:source_kind",
+          "value": "local"
+        },
+        {
+          "name": "provenant:publisher",
+          "value": "myorg"
+        },
+        {
+          "name": "provenant:publish_date",
+          "value": "2024-02-01"
+        },
+        {
+          "name": "provenant:content_hash",
+          "value": "sha256:91de06df17c2305b3bf390df619887b0653014af"
+        }
+      ],
+      "modelCard": {
+        "properties": [
+          {
+            "name": "summary",
+            "value": "Chat fine-tune of acme/base-lm-1b."
+          }
+        ]
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "model:myorg/base-lm-1b-chat",
+      "dependsOn": [
+        "dataset:opencorp/instruct-mini",
+        "dataset:research-lab/dialogs-nc",
+        "model:acme/base-lm-1b"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "bom-ref": "finding-0",
+      "subjects": [
+        "dataset:research-lab/dialogs-nc"
+      ],
+      "annotator": {
+        "organization": {
+          "name": "Provenant"
+        }
+      },
+      "timestamp": "2026-01-01T00:00:00Z",
+      "text": "[HIGH][LIC-NC-001] Dataset 'research-lab/dialogs-nc' is under Creative Commons Attribution-NonCommercial 4.0 (non-commercial)."
+    },
+    {
+      "bom-ref": "finding-1",
+      "subjects": [
+        "model:myorg/base-lm-1b-chat"
+      ],
+      "annotator": {
+        "organization": {
+          "name": "Provenant"
+        }
+      },
+      "timestamp": "2026-01-01T00:00:00Z",
+      "text": "[HIGH][LIC-INCOMPAT-001] Model 'myorg/base-lm-1b-chat' (Apache License 2.0) has a non-commercial component 'research-lab/dialogs-nc' (Creative Commons Attribution-NonCommercial 4.0) in its lineage."
+    }
+  ]
+}

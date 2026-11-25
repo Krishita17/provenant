@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use Provenant in your work, please cite it as below."
+title: "Provenant: An AI Bill of Materials (AIBOM) Generator for Model & Dataset Provenance"
+abstract: >-
+  Provenant walks an ML project, discovers its AI components (models, datasets,
+  and binding frameworks), resolves their metadata and licenses, reconstructs
+  lineage into a provenance graph, analyzes license and provenance risk, and
+  assembles a standards-aligned AI Bill of Materials (CycloneDX ML-BOM / SPDX
+  AI-profile compatible) with a human-readable risk report.
+type: software
+authors:
+  - family-names: "Choksi"
+    given-names: "Krishita Sanjay"
+license: MIT
+repository-code: "https://github.com/Krishita17/provenant"
+version: "0.1.0"
+date-released: "2026-01-01"
+keywords:
+  - AIBOM
+  - ML-BOM
+  - SBOM
+  - software supply chain
+  - model provenance
+  - dataset provenance
+  - license compliance
+  - CycloneDX
+  - SPDX
